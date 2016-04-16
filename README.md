@@ -1,4 +1,4 @@
-# MinDeploy
+# Deploy Chi
 
 Minimalistic deployment shell script.
 
@@ -8,7 +8,7 @@ The script consists of two side:
 
 ### Installation
 
-You need gcc(GNU Compiler Collection):
+You need gcc (GNU Compiler Collection):
 
 ```sh
 $ gcc -o deploy deploy.c
@@ -31,10 +31,10 @@ $ vi yoursite.com.sh
 Add your commands
 
 For example:
->cd /var/www/example.com\
->git fetch --all\
->git reset --hard origin/master\
->/var/www/example.com/bin/python3.5 src/manage.py collectstatic\
+>cd /var/www/example.com  
+>git fetch --all  
+>git reset --hard origin/master  
+>/var/www/example.com/bin/python3.5 src/manage.py collectstatic  
 >supervisorctl restart example
 
 
